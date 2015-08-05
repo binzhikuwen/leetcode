@@ -32,6 +32,7 @@ public:
 		vector<string> r(nRows);
 		int row = 0;
 		int step = 1;
+		//按zigzag的顺序填入每行中
 		for(int i=0; i<s.size(); i ++)
 		{
 			if (row == nRows-1) step = -1;
