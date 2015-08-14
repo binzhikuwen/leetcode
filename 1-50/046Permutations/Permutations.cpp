@@ -15,16 +15,16 @@
 class Solution 
 {
 public:
-    vector<vector<int>> permute(vector<int>& nums) 
+    vector<vector<int>> permute(vector<int>& num) 
 	{
-			vector<int> temp(nums);
+			vector<int> temp(num);
 			sort(temp.begin(),temp.end());
-			vector(vector<int> > result;
-			result.push_back(temp);
-			while(next_permutation(temp.begin(),temp.end())
+			vector<vector<int> > result;
+			do
 			{
 				result.push_back(temp);
 			}
+			while(next_permutation(temp.begin(),temp.end()));
 			return result;
     }
 };
