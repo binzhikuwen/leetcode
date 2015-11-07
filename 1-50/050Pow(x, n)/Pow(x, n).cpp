@@ -1,6 +1,6 @@
 // Source : https://oj.leetcode.com/problems/powx-n/
 // Author : Learn from Hao Chen
-// Date   : 2014-06-25
+// Date   : 2015-11-06
 
 /********************************************************************************** 
 * 
