@@ -4,7 +4,7 @@
 /* numbers=[2, 7, 11, 15], target=9 */
 var numbers = [2, 7, 11, 15];
 +function (num) {
-    var target = 22;
+    var target = 9;
     var result=new Set();
     for (var i = 0; i < num.length; i++) {
        var index=num.indexOf(target-num[i]);
