@@ -1,7 +1,7 @@
-/**
- * Created by lyndon.li on 3/14/2016.
- */
-var str1="bbbbbb",str2="abcdabcdbdb";
+// Source : https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/
+// Author : Lyndon
+// Date   : 2016-03-14
+var str2="asdfadfaasdfasdfasdfadsfasdf";
 +function (str) {
     var i= 0,longest_repeat=[],ost=0;
    while(i<str.length){
