@@ -1,17 +1,13 @@
-/**
- * Created by lyndon.li on 3/14/2016.
- */
-/* numbers=[2, 7, 11, 15], target=9 */
-var numbers = [2, 7, 11, 15];
-+function (num) {
-    var target = 9;
-    var result=new Set();
-    for (var i = 0; i < num.length; i++) {
-       var index=num.indexOf(target-num[i]);
+// Source : https://oj.leetcode.com/problems/two-sum/
+// Author : Lyndon
+// Date   : 2016-03-14
+var twoSum = function(nums, target) {
+    var result=[];
+    for (var i = 0; i < nums.length; i++) {
+        var index=nums.indexOf(target-nums[i],i+1);
         if(index>0&&i<index){
-          result.add([i+1,index+1]);
+            result.push(i,index);
         }
     }
-    console.log(result);
     return result;
-}(numbers);
+};
